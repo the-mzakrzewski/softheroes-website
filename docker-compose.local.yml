@@ -1,0 +1,26 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: local/Dockerfile
+    volumes:
+      - .:/var/www/html
+      - app-vendor:/var/www/html/vendor
+      - app-node-modules:/var/www/html/node_modules
+    ports:
+      - "8000:80"
+      - "5173:5173" # for Vite
+#  database:
+#    image: postgres:16.3-alpine
+#    volumes:
+#      - database-data:/var/lib/postgresql/16.3/data
+#    ports:
+#      - "5432:5432"
+#    environment:
+#      POSTGRES_DB: ${DB_DATABASE}
+#      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+  app-vendor:
+  app-node-modules:
+  database-data:
