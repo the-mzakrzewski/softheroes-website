@@ -8,7 +8,6 @@
 - Use of Tailwind CSS for utility-first styling
 - Avoid using too many colors
 - Don't design like another AI made website
-- Implement non-obvious design details such as asymmetrical grids, custom micro-interactions, or technical brutalist elements to demonstrate high-end coding skills.
 
 # Workflow
 - All css classes shold be in app.css file instaed of class attribute

@@ -5,7 +5,89 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manrope/manrope.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Manrope', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer components {
+    .hero-section {
+        @apply min-h-[calc(100vh-6rem)] flex flex-col justify-center max-w-7xl mx-auto px-6 md:px-0 py-20;
+    }
+
+    .hero-container {
+        @apply w-full;
+    }
+
+    .hero-title {
+        @apply text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[1.1] tracking-tight mb-12 w-full;
+    }
+
+    .hero-highlight {
+        @apply bg-blue-700 text-white px-4 py-1 inline-block transform -rotate-1;
+    }
+
+    .hero-subtitle-container {
+        @apply w-full;
+    }
+
+    .hero-subtitle {
+        @apply text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-2xl;
+    }
+
+    .hero-cta {
+        @apply bg-black text-white px-10 py-5 text-lg font-bold rounded-sm hover:bg-gray-800 transition-all inline-flex items-center gap-3 shadow-sm hover:shadow-md active:scale-95;
+    }
+
+    .hero-trust-indicators {
+        @apply mt-16 flex flex-wrap items-center gap-x-12 gap-y-6 text-sm font-semibold text-gray-700;
+    }
+
+    .trust-item {
+        @apply flex items-center gap-3;
+    }
+
+    .trust-icon {
+        @apply w-5 h-5 text-gray-400;
+    }
+
+    .header {
+        @apply w-full py-6 px-6 md:px-12 border-b border-gray-100 bg-white/90 backdrop-blur fixed top-0 left-0 right-0 z-50;
+    }
+
+    .header-container {
+        @apply max-w-7xl mx-auto flex justify-between items-center;
+    }
+
+    .logo {
+        @apply text-2xl font-bold tracking-tight;
+    }
+
+    .nav-menu {
+        @apply hidden md:flex gap-8 items-center text-sm font-medium text-gray-600;
+    }
+
+    .nav-link {
+        @apply hover:text-black transition-colors;
+    }
+
+    .nav-cta {
+        @apply bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition-colors;
+    }
+
+    .mobile-menu-btn {
+        @apply md:hidden p-2 hover:bg-gray-100 rounded-md transition-colors;
+    }
+
+    .main-content {
+        @apply pt-24;
+    }
 }
