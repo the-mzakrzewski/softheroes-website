@@ -12,7 +12,7 @@
     <!-- Navbar aligned with the rest of the content width (max-w-7xl) -->
     <header class="header">
         <div class="header-container">
-            <div class="logo">SoftHeroes</div>
+            <div class="logo">soft<span>heroes</span></div>
             
             <!-- Real Menu instead of Hamburger -->
             <nav class="nav-menu">
