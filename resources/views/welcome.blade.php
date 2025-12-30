@@ -73,62 +73,56 @@
             </div>
         </section>
 
-        <!-- Vision and Impact Section -->
-        <section id="o-nas" class="px-6 md:px-0 py-24 max-w-7xl mx-auto border-t border-gray-200">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <section class="blockers-section">
+            <div class="blockers-grid">
                 <!-- Section Label -->
-                <div class="md:col-span-3">
-                    <span class="text-sm font-mono text-gray-400 tracking-widest uppercase">// NASZA WIZJA //</span>
+                <div class="blockers-label-col">
+                    <span class="blockers-label">// BLOKADY WZROSTU //</span>
                 </div>
 
                 <!-- Content -->
-                <div class="md:col-span-9">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-                        „Niezależnie czy to strona, aplikacja czy identyfikacja wizualna – tworzymy rzeczy, które działają.”
+                <div class="blockers-content-col">
+                    <h2 class="blockers-title">
+                        Twój biznes rośnie szybciej niż wydajność Twojego systemu, a dokupowanie kolejnych serwerów przestało przynosić rezultaty.
                     </h2>
-                    <p class="text-lg text-gray-500 mb-16 max-w-2xl">
-                        Wierzymy, że design to nie tylko wygląd, ale przede wszystkim sposób działania. Nasze podejście łączy analitykę z kreatywnością, dostarczając wymierne rezultaty.
+                    <p class="blockers-description">
+                        Większość firm na etapie skalowania wpada w pułapkę „pudrowania problemu”. Zamiast szukać przyczyn w architekturze backendu, inwestują w coraz droższą infrastrukturę chmurową. To rozwiązanie krótkowzroczne, które generuje ogromne koszty, nie usuwając realnego wąskiego gardła.
+                        <br><br>
+                        Prawdziwa bariera prawie zawsze leży w kodzie i strukturze danych. Jako inżynier z 13-letnim doświadczeniem pomagam firmom zidentyfikować te punkty oporu i odblokować potencjał aplikacji bez konieczności kosztownego przepisywania systemu od zera.
                     </p>
+                </div>
+            </div>
 
-                    <!-- Key Metrics -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 border-t border-gray-100 pt-10">
-                        <div>
-                            <div class="text-5xl font-bold text-blue-700 mb-2">47+</div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wide font-medium">Zrealizowanych projektów</div>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-bold text-blue-700 mb-2">8.5M+ PLN</div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wide font-medium">Przychodu klientów</div>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-bold text-blue-700 mb-2">95%</div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wide font-medium">Retencji klientów</div>
-                        </div>
-                    </div>
+            <div class="blockers-boxes-container">
+                <!-- Box 1 -->
+                <div class="blocker-box">
+                    <div class="blocker-box-number">01</div>
+                    <h3 class="blocker-box-title">Biznes i konwersja</h3>
+                    <p class="blocker-box-text">
+                        <strong>Wolny system to uciekający klienci.</strong> Każda sekunda opóźnienia w odpowiedzi aplikacji to mierzalny spadek zadowolenia użytkowników i wzrost współczynnika odrzuceń. Jeśli system zwalnia w kluczowych momentach, Twoje wydatki na marketing idą na marne, bo backend staje się barierą dla sprzedaży.
+                    </p>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="blocker-box">
+                    <div class="blocker-box-number">02</div>
+                    <h3 class="blocker-box-title">Infrastruktura i koszty</h3>
+                    <p class="blocker-box-text">
+                        <strong>Drenaż budżetu przez nieefektywny kod.</strong> Nieoptymalne zapytania i brak właściwego cachowania „przepalają” zasoby serwerowe, zmuszając Cię do płacenia gigantycznych rachunków za AWS czy Azure. Zoptymalizowany system pozwala zredukować koszty utrzymania nawet o 40-60%, przy zachowaniu tej samej skali ruchu.
+                    </p>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="blocker-box">
+                    <div class="blocker-box-number">03</div>
+                    <h3 class="blocker-box-title">Zespół i rozwój</h3>
+                    <p class="blocker-box-text">
+                        <strong>Paraliż deweloperski i gaszenie pożarów.</strong> Zamiast dowozić nowe funkcjonalności, Twój zespół spędza 80% czasu na reanimowaniu bazy danych. Frustracja programistów i strach przed każdym wdrożeniem blokują innowacje. Stabilna architektura przywraca Twojemu zespołowi zwinność i spokój pracy.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Trust and Transition -->
-        <section class="px-6 md:px-12 pb-24 max-w-7xl mx-auto">
-            <div class="border-t border-gray-200 pt-12">
-                <p class="text-sm text-gray-400 mb-8 uppercase tracking-widest text-center md:text-left">Zaufali nam</p>
-                <div class="flex flex-wrap justify-between items-center gap-8 grayscale opacity-60">
-                    <!-- Logo Placeholders -->
-                    <svg class="h-8 w-auto" viewBox="0 0 100 30" fill="currentColor"><path d="M10,15 L20,5 L30,15 L20,25 Z M40,5 H90 V25 H40 Z" /></svg>
-                    <svg class="h-8 w-auto" viewBox="0 0 100 30" fill="currentColor"><circle cx="15" cy="15" r="10"/><rect x="35" y="5" width="55" height="20"/></svg>
-                    <svg class="h-8 w-auto" viewBox="0 0 100 30" fill="currentColor"><rect x="5" y="5" width="20" height="20"/><rect x="35" y="5" width="55" height="20"/></svg>
-                    <svg class="h-8 w-auto" viewBox="0 0 100 30" fill="currentColor"><path d="M15,5 L25,25 L5,25 Z"/><rect x="35" y="5" width="55" height="20"/></svg>
-                    <svg class="h-8 w-auto" viewBox="0 0 100 30" fill="currentColor"><circle cx="15" cy="15" r="10"/><rect x="35" y="5" width="55" height="20"/></svg>
-                </div>
-            </div>
-            
-            <div class="border-t border-black mt-24 pt-12">
-                <h3 class="text-3xl md:text-5xl font-bold max-w-4xl leading-tight">
-                    Tak pomagamy ambitnym firmom osiągnąć sukces.
-                </h3>
-            </div>
-        </section>
     </main>
 
     <footer class="bg-gray-50 py-12 px-6 md:px-12 border-t border-gray-200">
