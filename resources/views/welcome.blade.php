@@ -24,10 +24,7 @@
 
         <!-- Mobile Menu Icon -->
         <button class="mobile-menu-btn" aria-label="Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                 stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
+            <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
     </div>
 </header>
@@ -56,30 +53,19 @@
 
                 <div class="hero-trust-indicators">
                     <div class="trust-item">
-                        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                        <i data-lucide="clock" class="trust-icon"></i>
                         <span>13+ lat doświadczenia</span>
                     </div>
                     <div class="trust-item">
-                        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
+                        <i data-lucide="zap" class="trust-icon"></i>
                         <span>Architektura High-Load</span>
                     </div>
                     <div class="trust-item">
-                        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                        </svg>
+                        <i data-lucide="code-2" class="trust-icon"></i>
                         <span>Stack: PHP • JS • PYTHON</span>
                     </div>
                     <div class="trust-item">
-                        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                        </svg>
+                        <i data-lucide="bar-chart-3" class="trust-icon"></i>
                         <span>Średnio -80% czasu odpowiedzi</span>
                     </div>
                 </div>
@@ -175,11 +161,7 @@
                     <!-- Item 1 -->
                     <div class="checklist-item">
                         <div class="checklist-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                            </svg>
+                            <i data-lucide="check-circle" class="size-6"></i>
                         </div>
                         <div class="checklist-content">
                             <h3 class="checklist-title">Stabilizacja zamiast rewolucji</h3>
@@ -193,13 +175,7 @@
                     <!-- Item 2 -->
                     <div class="checklist-item">
                         <div class="checklist-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"/>
-                            </svg>
+                            <i data-lucide="file-text" class="size-6"></i>
                         </div>
                         <div class="checklist-content">
                             <h3 class="checklist-title">Dane zamiast intuicji</h3>
@@ -212,11 +188,7 @@
                     <!-- Item 3 -->
                     <div class="checklist-item">
                         <div class="checklist-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
-                            </svg>
+                            <i data-lucide="hand-coins" class="size-6"></i>
                         </div>
                         <div class="checklist-content">
                             <h3 class="checklist-title">Efektywność kosztowa</h3>
