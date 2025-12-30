@@ -135,9 +135,9 @@
                     pracy.
 
             </div>
-                    </div>
-            </section>
-        
+        </div>
+    </section>
+
     <section class="audit-section">
         <div class="section-grid">
             <!-- Section Label -->
@@ -148,22 +148,19 @@
             <!-- Content -->
             <div class="section-content-col">
                 <h2 class="blockers-title">
-                    Odzyskaj kontrolę nad stabilnością swojego systemu dzięki ustrukturyzowanej diagnozie. Skupiam się na znalezieniu najkrótszej drogi do odblokowania Twojego biznesu.
+                    Odzyskaj kontrolę nad stabilnością swojego systemu dzięki ustrukturyzowanej diagnozie. Skupiam się
+                    na znalezieniu najkrótszej drogi do odblokowania Twojego biznesu.
                 </h2>
                 <p class="blockers-description">
-                    Audyt to intensywny sprint diagnostyczny, który kończy się konkretną listą priorytetów technicznych. Zamiast wprowadzać przypadkowe poprawki, działam metodą naukową: analizuję telemetrię, profiluję kod i badam zachowanie bazy danych pod obciążeniem.
-                    <br /> <br />
-                    Otrzymujesz ode mnie dokumentację „Performance Roadmap”, która jasno wskazuje, co wymaga natychmiastowej interwencji (Quick Wins), a co jest zadaniem architektonicznym na przyszłość. Całość procesu odbywa się asynchronicznie i bezinwazyjnie – nie angażuję Twojego zespołu, pracuję na kopiach logów i dostępach do repozytorium.
+                    Audyt to intensywny sprint diagnostyczny, który kończy się konkretną listą priorytetów technicznych.
+                    Zamiast wprowadzać przypadkowe poprawki, działam metodą naukową: analizuję telemetrię, profiluję kod
+                    i badam zachowanie bazy danych pod obciążeniem.
+                    <br/> <br/>
+                    Otrzymujesz ode mnie dokumentację „Performance Roadmap”, która jasno wskazuje, co wymaga
+                    natychmiastowej interwencji (Quick Wins), a co jest zadaniem architektonicznym na przyszłość. Całość
+                    procesu odbywa się asynchronicznie i bezinwazyjnie – nie angażuję Twojego zespołu, pracuję na
+                    kopiach logów i dostępach do repozytorium.
                 </p>
-            </div>
-        </div>
-
-            </div>
-        </div>
-
-            </div>
-        </div>
-
             </div>
         </div>
 
@@ -179,7 +176,8 @@
                         <span class="timeline-stage-label">Etap 01</span>
                         <h3 class="timeline-title">Telemetria i profilowanie</h3>
                         <p class="timeline-desc">
-                            Skupiam się na konfiguracji narzędzi pomiarowych i zbieraniu danych z kluczowych ścieżek użytkownika. Identyfikuję „najdroższe” operacje i mierzę realne czasy odpowiedzi backendu.
+                            Skupiam się na konfiguracji narzędzi pomiarowych i zbieraniu danych z kluczowych ścieżek
+                            użytkownika. Identyfikuję „najdroższe” operacje i mierzę realne czasy odpowiedzi backendu.
                         </p>
                     </div>
                 </div>
@@ -193,7 +191,9 @@
                         <span class="timeline-stage-label">Etap 02</span>
                         <h3 class="timeline-title">Izolacja wąskich gardeł</h3>
                         <p class="timeline-desc">
-                            Schodzę na poziom zapytań SQL i logiki biznesowej. Szukam nieefektywnej komunikacji między usługami, brakujących indeksów oraz problemów z zarządzaniem pamięcią w PHP, Pythonie lub JS.
+                            Schodzę na poziom zapytań SQL i logiki biznesowej. Szukam nieefektywnej komunikacji między
+                            usługami, brakujących indeksów oraz problemów z zarządzaniem pamięcią w PHP, Pythonie lub
+                            JS.
                         </p>
                     </div>
                 </div>
@@ -205,9 +205,11 @@
                     </div>
                     <div class="timeline-content">
                         <span class="timeline-stage-label">Etap 03</span>
-                        <h3 class="timeline-title">Audyt infrastruktury</h3>
+                        <h3 class="timeline-title">Audyt Infrastruktury</h3>
                         <p class="timeline-desc">
-                            Weryfikuję, czy konfiguracja serwerowa (AWS, Azure, Bare-metal) wspiera Twoją aplikację. Szukam błędów w konfiguracji środowiska, których naprawa może przynieść natychmiastową ulgę dla systemu.
+                            Weryfikuję, czy konfiguracja serwerowa (AWS, Azure, Bare-metal) wspiera Twoją aplikację.
+                            Szukam błędów w konfiguracji środowiska, których naprawa może przynieść natychmiastową ulgę
+                            dla systemu.
                         </p>
                     </div>
                 </div>
@@ -219,9 +221,11 @@
                     </div>
                     <div class="timeline-content">
                         <span class="timeline-stage-label">Etap 04</span>
-                        <h3 class="timeline-title">Performance roadmap</h3>
+                        <h3 class="timeline-title">Performance Roadmap & Strategia</h3>
                         <p class="timeline-desc">
-                            Dostarczam raport z jasną hierarchią działań. Dzielę zadania na te, które dają wynik w 24h, oraz strategiczne rekomendacje, które trwale wyeliminują dług techniczny w Twojej architekturze.
+                            Dostarczam raport z jasną hierarchią działań. Dzielę zadania na te, które dają wynik w 24h,
+                            oraz strategiczne rekomendacje, które trwale wyeliminują dług techniczny w Twojej
+                            architekturze.
                         </p>
                     </div>
                 </div>
@@ -232,12 +236,26 @@
                 <div class="audit-pricing-card">
                     <div class="audit-pricing-content">
                         <div class="audit-pricing-header">
-                            <div class="audit-price-label">Inwestycja</div>
-                            <div class="audit-price"><span class="text-2xl font-normal text-neutral-400">od</span> 4 999 PLN <span class="text-sm font-normal text-neutral-500">netto</span></div>
-                            <div class="audit-price-sub">Ostateczna wycena zależy od wielkości i złożoności systemu.</div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em] mb-3">Inwestycja już od</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-5xl md:text-6xl font-black text-white tracking-tighter">4999</span>
+                                    <span class="text-xl font-bold text-neutral-500">PLN</span>
+                                </div>
+                                <div class="mt-6 pt-6 border-t border-neutral-800">
+                                    <p class="text-[11px] text-neutral-400 leading-relaxed uppercase tracking-widest">
+                                        Cena netto. Ostateczna wycena zależy od <br> wielkości i złożoności Twojego
+                                        systemu.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        
+
                         <ul class="audit-features-list">
+                            <li class="audit-feature-item">
+                                <i data-lucide="clock" class="audit-feature-icon"></i>
+                                <span>Czas realizacji: ok. 5 dni roboczych</span>
+                            </li>
                             <li class="audit-feature-item">
                                 <i data-lucide="check-circle" class="audit-feature-icon"></i>
                                 <span>Pełna analiza kodu i infrastruktury</span>
@@ -268,8 +286,9 @@
             </div>
         </div>
     </section>
-        
-            <section class="about-section">        <div class="section-grid">
+
+    <section class="about-section">
+        <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
                 <span class="section-label">// O SOFTHEROES //</span>
@@ -311,7 +330,8 @@
                         <div class="checklist-content">
                             <h3 class="checklist-title">Dane zamiast intuicji</h3>
                             <p class="checklist-desc">
-                                Nie zgaduję. Używam profilowania kodu, aby wskazać realne źródła problemów i wdrożyć poprawki, które faktycznie działają.
+                                Nie zgaduję. Używam profilowania kodu, aby wskazać realne źródła problemów i wdrożyć
+                                poprawki, które faktycznie działają.
                             </p>
                         </div>
                     </div>
@@ -324,7 +344,8 @@
                         <div class="checklist-content">
                             <h3 class="checklist-title">Efektywność kosztowa</h3>
                             <p class="checklist-desc">
-                                Optymalizuję system tak, aby Twój system mógł obsłużyć większy ruch bez konieczności ciągłego zwiększania wydatków na infrastrukturę.
+                                Optymalizuję system tak, aby Twój system mógł obsłużyć większy ruch bez konieczności
+                                ciągłego zwiększania wydatków na infrastrukturę.
                             </p>
                         </div>
                     </div>
