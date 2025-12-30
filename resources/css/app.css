@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Manrope';
-    src: url('../fonts/manrope/manrope.woff2') format('woff2');
+    src: url('../fonts/manrope/Manrope.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@ body {
     }
 
     .hero-title {
-        @apply text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[1.1] tracking-tight mb-12 w-full;
+        @apply text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[1.2] tracking-tight mb-12 w-full;
     }
 
     .hero-highlight {
@@ -122,7 +122,7 @@ body {
     }
 
     .blockers-title {
-        @apply text-3xl md:text-5xl font-bold mb-10 leading-[1] tracking-tight -mt-2;
+        @apply text-3xl md:text-5xl font-bold mb-10 leading-[1.2] tracking-tight -mt-2;
     }
 
     .blockers-description {

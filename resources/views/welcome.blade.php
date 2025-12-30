@@ -83,7 +83,7 @@
                 <!-- Content -->
                 <div class="section-content-col">
                     <h2 class="blockers-title">
-                        Zamiast eliminować błędy w architekturze, większość firm próbuje je „przykryć” coraz droższą infrastrukturą.
+                        Zamiast eliminować problemy w architekturze, większość firm próbuje je „przykryć” coraz droższą infrastrukturą.
                     </h2>
                     <p class="blockers-description">
                         Inwestowanie w mocniejsze serwery to rozwiązanie krótkowzroczne – generuje wysokie koszty, nie usuwając źródła problemu. Prawdziwa bariera skalowalności prawie zawsze leży w kodzie i strukturze danych.
