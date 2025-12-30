@@ -1,5 +1,5 @@
 import './bootstrap';
-import { createIcons, Menu, Clock, Zap, Code2, FileText, CheckCircle, PieChart, HandCoins } from 'lucide';
+import { createIcons, Menu, Clock, Zap, Code2, BarChart3, CheckCircle, PieChart, Wrench, Search, FileText, Layers, Activity, HandCoins } from 'lucide';
 
 createIcons({
   icons: {
@@ -7,9 +7,14 @@ createIcons({
     Clock,
     Zap,
     Code2,
-    FileText,
+    BarChart3,
     CheckCircle,
     PieChart,
+    Wrench,
+    Search,
+    FileText,
+    Layers,
+    Activity,
     HandCoins
   }
 });

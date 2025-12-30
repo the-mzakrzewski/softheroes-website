@@ -135,10 +135,141 @@
                     pracy.
 
             </div>
-    </section>
-
-    <section class="about-section">
+                    </div>
+            </section>
+        
+    <section class="audit-section">
         <div class="section-grid">
+            <!-- Section Label -->
+            <div class="section-label-col">
+                <span class="section-label">// AUDYT //</span>
+            </div>
+
+            <!-- Content -->
+            <div class="section-content-col">
+                <h2 class="blockers-title">
+                    Odzyskaj kontrolę nad stabilnością swojego systemu dzięki ustrukturyzowanej diagnozie. Skupiam się na znalezieniu najkrótszej drogi do odblokowania Twojego biznesu.
+                </h2>
+                <p class="blockers-description">
+                    Audyt to intensywny sprint diagnostyczny, który kończy się konkretną listą priorytetów technicznych. Zamiast wprowadzać przypadkowe poprawki, działam metodą naukową: analizuję telemetrię, profiluję kod i badam zachowanie bazy danych pod obciążeniem.
+                    <br /> <br />
+                    Otrzymujesz ode mnie dokumentację „Performance Roadmap”, która jasno wskazuje, co wymaga natychmiastowej interwencji (Quick Wins), a co jest zadaniem architektonicznym na przyszłość. Całość procesu odbywa się asynchronicznie i bezinwazyjnie – nie angażuję Twojego zespołu, pracuję na kopiach logów i dostępach do repozytorium.
+                </p>
+            </div>
+        </div>
+
+            </div>
+        </div>
+
+            </div>
+        </div>
+
+            </div>
+        </div>
+
+        <div class="audit-grid">
+            <!-- Left Column: Timeline -->
+            <div class="audit-timeline">
+                <!-- Stage 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-stage-label">Etap 01</span>
+                        <h3 class="timeline-title">Telemetria i profilowanie</h3>
+                        <p class="timeline-desc">
+                            Skupiam się na konfiguracji narzędzi pomiarowych i zbieraniu danych z kluczowych ścieżek użytkownika. Identyfikuję „najdroższe” operacje i mierzę realne czasy odpowiedzi backendu.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-stage-label">Etap 02</span>
+                        <h3 class="timeline-title">Izolacja wąskich gardeł</h3>
+                        <p class="timeline-desc">
+                            Schodzę na poziom zapytań SQL i logiki biznesowej. Szukam nieefektywnej komunikacji między usługami, brakujących indeksów oraz problemów z zarządzaniem pamięcią w PHP, Pythonie lub JS.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-stage-label">Etap 03</span>
+                        <h3 class="timeline-title">Audyt infrastruktury</h3>
+                        <p class="timeline-desc">
+                            Weryfikuję, czy konfiguracja serwerowa (AWS, Azure, Bare-metal) wspiera Twoją aplikację. Szukam błędów w konfiguracji środowiska, których naprawa może przynieść natychmiastową ulgę dla systemu.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-stage-label">Etap 04</span>
+                        <h3 class="timeline-title">Performance roadmap</h3>
+                        <p class="timeline-desc">
+                            Dostarczam raport z jasną hierarchią działań. Dzielę zadania na te, które dają wynik w 24h, oraz strategiczne rekomendacje, które trwale wyeliminują dług techniczny w Twojej architekturze.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Pricing & CTA -->
+            <div class="audit-pricing-wrapper">
+                <div class="audit-pricing-card">
+                    <div class="audit-pricing-content">
+                        <div class="audit-pricing-header">
+                            <div class="audit-price-label">Inwestycja</div>
+                            <div class="audit-price"><span class="text-2xl font-normal text-neutral-400">od</span> 4 999 PLN <span class="text-sm font-normal text-neutral-500">netto</span></div>
+                            <div class="audit-price-sub">Ostateczna wycena zależy od wielkości i złożoności systemu.</div>
+                        </div>
+                        
+                        <ul class="audit-features-list">
+                            <li class="audit-feature-item">
+                                <i data-lucide="check-circle" class="audit-feature-icon"></i>
+                                <span>Pełna analiza kodu i infrastruktury</span>
+                            </li>
+                            <li class="audit-feature-item">
+                                <i data-lucide="check-circle" class="audit-feature-icon"></i>
+                                <span>Raport z listą "Quick Wins"</span>
+                            </li>
+                            <li class="audit-feature-item">
+                                <i data-lucide="check-circle" class="audit-feature-icon"></i>
+                                <span>Plan naprawczy "Performance Roadmap"</span>
+                            </li>
+                            <li class="audit-feature-item">
+                                <i data-lucide="check-circle" class="audit-feature-icon"></i>
+                                <span>1h konsultacji omówienia wyników</span>
+                            </li>
+                            <li class="audit-feature-item">
+                                <i data-lucide="check-circle" class="audit-feature-icon"></i>
+                                <span>Gwarancja znalezienia wąskich gardeł</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="audit-cta-wrapper">
+                        <a href="#kontakt" class="audit-cta">Zamów Audyt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+            <section class="about-section">        <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
                 <span class="section-label">// O SOFTHEROES //</span>
