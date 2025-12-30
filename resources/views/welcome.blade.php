@@ -74,21 +74,21 @@
         </section>
 
         <section class="blockers-section">
-            <div class="blockers-grid">
+            <div class="section-grid">
                 <!-- Section Label -->
-                <div class="blockers-label-col">
-                    <span class="blockers-label">// BLOKADY WZROSTU //</span>
+                <div class="section-label-col">
+                    <span class="section-label">// BLOKADY WZROSTU //</span>
                 </div>
 
                 <!-- Content -->
-                <div class="blockers-content-col">
+                <div class="section-content-col">
                     <h2 class="blockers-title">
-                        Twój biznes rośnie szybciej niż wydajność Twojego systemu, a dokupowanie kolejnych serwerów przestało przynosić rezultaty.
+                        Zamiast eliminować błędy w architekturze, większość firm próbuje je „przykryć” coraz droższą infrastrukturą.
                     </h2>
                     <p class="blockers-description">
-                        Większość firm na etapie skalowania wpada w pułapkę „pudrowania problemu”. Zamiast szukać przyczyn w architekturze backendu, inwestują w coraz droższą infrastrukturę chmurową. To rozwiązanie krótkowzroczne, które generuje ogromne koszty, nie usuwając realnego wąskiego gardła.
+                        Inwestowanie w mocniejsze serwery to rozwiązanie krótkowzroczne – generuje wysokie koszty, nie usuwając źródła problemu. Prawdziwa bariera skalowalności prawie zawsze leży w kodzie i strukturze danych.
                         <br><br>
-                        Prawdziwa bariera prawie zawsze leży w kodzie i strukturze danych. Jako inżynier z 13-letnim doświadczeniem pomagam firmom zidentyfikować te punkty oporu i odblokować potencjał aplikacji bez konieczności kosztownego przepisywania systemu od zera.
+                        Wykorzystuję 13-letnie doświadczenie, aby precyzyjnie wskazać te punkty oporu. Pomagam odblokować wydajność Twojej aplikacji i obniżyć koszty utrzymania, unikając ryzykownego przepisywania systemu od zera.
                     </p>
                 </div>
             </div>

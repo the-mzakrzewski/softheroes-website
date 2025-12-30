@@ -99,29 +99,30 @@ body {
         @apply pt-24;
     }
 
-    /* Blokady Wzrostu Section */
+    /* Common Section Layouts */
+    .section-grid {
+        @apply grid grid-cols-1 md:grid-cols-12 gap-12 mb-20;
+    }
+
+    .section-label-col {
+        @apply md:col-span-3;
+    }
+
+    .section-content-col {
+        @apply md:col-span-9;
+    }
+
+    .section-label {
+        @apply text-sm font-mono text-neutral-400 tracking-widest uppercase block;
+    }
+
+    /* Blokady Wzrostu Section Specifics */
     .blockers-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-t border-b border-gray-200;
     }
 
-    .blockers-grid {
-        @apply grid grid-cols-1 md:grid-cols-12 gap-12 mb-20;
-    }
-
-    .blockers-label-col {
-        @apply md:col-span-2;
-    }
-
-    .blockers-label {
-        @apply text-sm font-mono text-neutral-400 tracking-widest uppercase;
-    }
-
-    .blockers-content-col {
-        @apply md:col-span-10;
-    }
-
     .blockers-title {
-        @apply text-3xl md:text-5xl font-bold mb-10 leading-tight tracking-tight;
+        @apply text-3xl md:text-5xl font-bold mb-10 leading-[1] tracking-tight -mt-2;
     }
 
     .blockers-description {
