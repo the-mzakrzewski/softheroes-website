@@ -66,7 +66,7 @@
                     </div>
                     <div class="trust-item">
                         <i data-lucide="bar-chart-3" class="trust-icon"></i>
-                        <span>Średnio -80% czasu odpowiedzi</span>
+                        <span>Redukcja Latency: avg. -80%</span>
                     </div>
                 </div>
 
@@ -142,7 +142,7 @@
         <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
-                <span class="section-label">// AUDYT //</span>
+                <span class="section-label">// AUDYT WYDAJNOŚCI //</span>
             </div>
 
             <!-- Content -->
