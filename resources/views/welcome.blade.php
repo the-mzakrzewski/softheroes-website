@@ -603,7 +603,7 @@
                         </div>
                         <div>
                             <span class="contact-detail-label">Status dostępności</span>
-                            <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na nowe projekty</span>
+                            <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na Q1 2025</span>
                         </div>
                     </div>
                 </div>
@@ -664,7 +664,7 @@
                 <a href="#audyt" class="footer-link">Audyt & Proces</a>
                 <a href="#case-studies" class="footer-link">Case Studies</a>
                 <a href="#kontakt" class="footer-link">Kontakt / Wycena</a>
-                <a href="#" class="footer-link text-neutral-500 hover:text-neutral-400">Polityka Prywatności</a>
+                <a href="/polityka-prywatnosci" class="footer-link text-neutral-500 hover:text-neutral-400">Polityka Prywatności</a>
             </nav>
         </div>
 
@@ -673,7 +673,7 @@
             <span class="footer-label">// DANE FIRMY //</span>
             <div class="footer-legal-text">
                 <p class="font-bold text-neutral-300 mb-1">Soft Heroes Michał Zakrzewski</p>
-                <p>NIP: 732-210-27-67</p>
+                <p>NIP: 7322102767</p>
                 <p>ul. Milenijna 29/33</p>
                 <p>95-100 Zgierz</p>
                 <p class="mt-4">Polska / Remote</p>
