@@ -21,12 +21,12 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | b
     && export NVM_DIR="$HOME/.nvm" \
     && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
     && nvm install 24 \
-    && nvm use 24
+    && nvm use 24 \
+    && npm install -g pnpm@latest-10
 
 # Install PHP, nginx and Node
 RUN apt-get install -y \
     nginx \
-    nodejs \
     php8.5-fpm \
     php8.5-common \
     php8.5-curl \
