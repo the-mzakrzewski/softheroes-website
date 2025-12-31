@@ -353,11 +353,11 @@
                     <div class="case-metrics-container">
                         <div class="case-metric-box before">
                             <span class="case-metric-label">Przed</span>
-                            <span class="case-metric-value">120s+</span>
+                            <span class="case-metric-value">120s</span>
                         </div>
                         <div class="case-metric-box after">
                             <span class="case-metric-label">Po</span>
-                            <span class="case-metric-value">&lt;200ms</span>
+                            <span class="case-metric-value">200ms</span>
                         </div>
                     </div>
 
@@ -568,29 +568,12 @@
     </section>
 
     <section id="kontakt" class="contact-section">
-        <div class="section-grid">
-            <div class="section-label-col">
+        <div class="section-grid !mb-0">
+            <!-- Left Column: Label & Contact Info (Desktop) -->
+            <div class="section-label-col flex flex-col">
                 <span class="section-label">// KONTAKT //</span>
-            </div>
-             <div class="section-content-col">
-                <h2 class="blockers-title">Przestań zgadywać. Znajdźmy przyczynę.</h2>
-                <p class="blockers-description">
-                    Opisz krótko wyzwania techniczne, z którymi się mierzysz. Wstępna analiza problemu jest bezpłatna i nie zobowiązuje do współpracy. Odpowiadam w ciągu 24h.
-                </p>
-            </div>
-        </div>
-
-        <div class="contact-grid">
-            <!-- Left: Info Card (Dark) -->
-            <div class="contact-info-wrapper">
-                <div>
-                    <h3 class="contact-info-title">Bezpieczeństwo i poufność</h3>
-                    <p class="contact-info-desc">
-                        Twoje dane i kod są bezpieczne. Każda analiza poprzedzona jest podpisaniem NDA, jeśli jest to wymagane przez Twoją organizację.
-                    </p>
-                </div>
-
-                <div class="contact-details">
+                
+                <div class="hidden md:flex flex-col gap-8 mt-16">
                     <div class="contact-detail-item">
                         <i data-lucide="mail" class="contact-detail-icon"></i>
                         <div>
@@ -613,17 +596,19 @@
                         </div>
                         <div>
                             <span class="contact-detail-label">Status dostępności</span>
-                            <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na Q1 2025</span>
+                            <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na Q1 2026</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Decorative element -->
-                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600 rounded-full opacity-10 blur-3xl pointer-events-none"></div>
             </div>
 
-            <!-- Right: Form (Light) -->
-            <div class="contact-form-wrapper" id="form-status">
+            <!-- Right Column: Content & Form -->
+            <div class="section-content-col">
+                <h2 class="blockers-title">Przestań zgadywać. Znajdźmy przyczynę.</h2>
+                <p class="blockers-description mb-12">
+                    Opisz krótko wyzwania techniczne, z którymi się mierzysz. Wstępna analiza problemu jest bezpłatna i nie zobowiązuje do współpracy. Odpowiadam w ciągu 24h.
+                </p>
+
                 @if(session('success'))
                     <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
                         <p class="font-bold">Wiadomość wysłana</p>
@@ -657,6 +642,37 @@
                 </form>
             </div>
         </div>
+
+        <!-- Mobile Contact Info (Below Form) -->
+        <div class="md:hidden mt-16 px-6">
+            <div class="flex flex-col gap-8 border-t border-neutral-200 pt-12">
+                <div class="contact-detail-item">
+                    <i data-lucide="mail" class="contact-detail-icon"></i>
+                    <div>
+                        <span class="contact-detail-label">Email</span>
+                        <a href="mailto:kontakt@softheroes.pl" class="contact-detail-value">kontakt@softheroes.pl</a>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <i data-lucide="linkedin" class="contact-detail-icon"></i>
+                    <div>
+                        <span class="contact-detail-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/michal-zakrzewski-a05b9a79" target="_blank" class="contact-detail-value">Michał Zakrzewski</a>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon flex items-center justify-center">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_0_4px_rgba(34,197,94,0.15)]"></span>
+                    </div>
+                    <div>
+                        <span class="contact-detail-label">Status dostępności</span>
+                        <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na Q1 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
@@ -674,7 +690,7 @@
             <div class="footer-status">
                 <span class="status-badge is-available !text-neutral-400 !text-xs !font-mono">
                     <span class="status-badge-dot"></span>
-                    Dostępność: Otwarty na Q1 2025
+                    Dostępność: Otwarty na Q1 2026
                 </span>
             </div>
         </div>
