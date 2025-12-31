@@ -3,7 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SoftHeroes - Rozwiązania Cyfrowe</title>
+
+    <title>softheroes | Optymalizacja Wydajności Backend (PHP, Python, Node.js)</title>
+    <meta name="description" content="Ekspercka optymalizacja wydajności systemów High-Load. Audyt wydajności backendu, redukcja kosztów infrastruktury i eliminacja wąskich gardeł w PHP, Python i Node.js.">
+    <meta name="keywords" content="optymalizacja backendu, audyt wydajności, PHP performance, Python optimization, Node.js high-load, skalowanie systemów, redukcja kosztów AWS">
+    <meta name="author" content="Michał Zakrzewski">
+    <link rel="canonical" href="https://www.softheroes.pl/">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white text-black font-sans antialiased">
