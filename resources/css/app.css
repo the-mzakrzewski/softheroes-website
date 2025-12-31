@@ -80,15 +80,23 @@ body {
     }
 
     .nav-menu {
-        @apply hidden md:flex gap-8 items-center text-sm font-medium text-neutral-600;
+        @apply hidden md:flex gap-10 items-center text-sm font-medium text-neutral-600;
+    }
+
+    .nav-menu.is-open {
+        @apply flex flex-col absolute top-full left-0 w-full bg-white p-6 border-b border-neutral-200 shadow-xl gap-6 z-50;
     }
 
     .nav-link {
-        @apply hover:text-neutral-800 transition-colors;
+        @apply hover:text-neutral-900 transition-colors flex items-center gap-2 whitespace-nowrap;
+    }
+
+    .nav-num {
+        @apply font-mono text-xs text-blue-600;
     }
 
     .nav-cta {
-        @apply bg-neutral-800 text-white px-5 py-2 rounded-full hover:bg-neutral-800 transition-colors;
+        @apply bg-neutral-900 text-white px-6 py-3 text-sm font-bold rounded-sm hover:bg-neutral-800 transition-all shadow-sm;
     }
 
     .mobile-menu-btn {

@@ -10,24 +10,24 @@
 
 <!-- Header / Navbar -->
 <!-- Navbar aligned with the rest of the content width (max-w-7xl) -->
-<header class="header">
-    <div class="header-container">
-        <div class="logo">soft<span>heroes</span></div>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">soft<span>heroes</span></div>
+            
+            <!-- Real Menu instead of Hamburger -->
+            <nav class="nav-menu">
+                <a href="#audyt" class="nav-link">Audyt</a>
+                <a href="#case-studies" class="nav-link">Wyniki</a>
+                <a href="#o-nas" class="nav-link">O mnie</a>
+                <a href="#kontakt" class="nav-cta">Zamów Audyt</a>
+            </nav>
 
-        <!-- Real Menu instead of Hamburger -->
-        <nav class="nav-menu">
-            <a href="#uslugi" class="nav-link">Usługi</a>
-            <a href="#o-nas" class="nav-link">O nas</a>
-            <a href="#projekty" class="nav-link">Projekty</a>
-            <a href="#kontakt" class="nav-cta">Kontakt</a>
-        </nav>
-
-        <!-- Mobile Menu Icon -->
-        <button class="mobile-menu-btn" aria-label="Menu">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-    </div>
-</header>
+            <!-- Mobile Menu Icon -->
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
 
 <main class="main-content"> <!-- Padding top to account for fixed header -->
 
@@ -138,7 +138,7 @@
         </div>
     </section>
 
-    <section class="audit-section">
+    <section id="audyt" class="audit-section">
         <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
@@ -287,7 +287,7 @@
         </div>
     </section>
 
-    <section class="cases-section">
+    <section id="case-studies" class="cases-section">
         <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
@@ -407,7 +407,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section id="o-nas" class="about-section">
         <div class="section-grid">
             <!-- Section Label -->
             <div class="section-label-col">
@@ -657,7 +657,7 @@
         <div class="footer-col">
             <span class="footer-label">// NAWIGACJA //</span>
             <nav class="footer-nav">
-                <a href="#uslugi" class="footer-link">Audyt & Proces</a>
+                <a href="#audyt" class="footer-link">Audyt & Proces</a>
                 <a href="#case-studies" class="footer-link">Case Studies</a>
                 <a href="#kontakt" class="footer-link">Kontakt / Wycena</a>
                 <a href="#" class="footer-link text-neutral-500 hover:text-neutral-400">Polityka Prywatności</a>
