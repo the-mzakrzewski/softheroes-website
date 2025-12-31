@@ -47,7 +47,7 @@
                     serwerów i wyeliminuję przestoje, byś mógł skupić się na sprzedaży, a nie na gaszeniu pożarów
                     technicznych.
                 </p>
-                <a href="#uslugi" class="hero-cta">
+                <a href="#kontakt" class="hero-cta">
                     Umów audyt wydajności
                 </a>
 
