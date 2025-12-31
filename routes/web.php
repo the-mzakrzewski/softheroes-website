@@ -28,7 +28,7 @@ Route::post('/contact', function (Request $request) {
     
     Storage::disk('local')->put($filename, $data);
 
-    return redirect()->to(url()->previous() . '#kontakt')->with('success', 'Dziękuję za wiadomość! Odpowiem w ciągu 24h.');
+    return redirect()->to(url()->previous() . '#form-status')->with('success', 'Dziękuję za wiadomość! Odpowiem w ciągu 24h.');
 })->name('contact.store');
 
 Route::get('/polityka-prywatnosci', function () {
