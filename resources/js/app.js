@@ -1,12 +1,11 @@
-import './bootstrap';
 import {
-    Activity,
     ArrowRight,
-    BarChart3,
+    ArrowUp,
+    Award,
     Calendar,
     Check,
     CheckCircle,
-    Clock,
+    ChevronsDown,
     Code2,
     Cpu,
     createIcons,
@@ -20,26 +19,25 @@ import {
     Menu,
     PieChart,
     Search,
+    ServerCog,
     ShieldCheck,
     Wrench,
     Zap,
-    ArrowUp
+    Clock,
+    Target
 } from 'lucide';
 
 createIcons({
     icons: {
         Menu,
-        Clock,
         Zap,
         Code2,
-        BarChart3,
         CheckCircle,
         PieChart,
         Wrench,
         Search,
         FileText,
         Layers,
-        Activity,
         ArrowRight,
         Check,
         Cpu,
@@ -50,7 +48,12 @@ createIcons({
         HandCoins,
         Mail,
         Linkedin,
-        ArrowUp
+        ArrowUp,
+        Award,
+        ChevronsDown,
+        ServerCog,
+        Clock,
+        Target
     },
 });
 

@@ -59,7 +59,7 @@
 
                 <div class="hero-trust-indicators">
                     <div class="trust-item">
-                        <i data-lucide="clock" class="trust-icon"></i>
+                        <i data-lucide="award" class="trust-icon"></i>
                         <span>13+ lat doświadczenia</span>
                     </div>
                     <div class="trust-item">
@@ -71,7 +71,7 @@
                         <span>Stack: PHP • JS • PYTHON</span>
                     </div>
                     <div class="trust-item">
-                        <i data-lucide="bar-chart-3" class="trust-icon"></i>
+                        <i data-lucide="chevrons-down" class="trust-icon"></i>
                         <span>Redukcja Latency: avg. -80%</span>
                     </div>
                 </div>
@@ -198,8 +198,7 @@
                         <h3 class="timeline-title">Izolacja wąskich gardeł</h3>
                         <p class="timeline-desc">
                             Schodzę na poziom zapytań SQL i logiki biznesowej. Szukam nieefektywnej komunikacji między
-                            usługami, brakujących indeksów oraz problemów z zarządzaniem pamięcią w PHP, Pythonie lub
-                            JS.
+                            usługami, brakujących indeksów oraz problemów z zarządzaniem pamięcią.
                         </p>
                     </div>
                 </div>
@@ -207,7 +206,7 @@
                 <!-- Stage 3 -->
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <i data-lucide="layers"></i>
+                        <i data-lucide="server-cog"></i>
                     </div>
                     <div class="timeline-content">
                         <span class="timeline-stage-label">Etap 03</span>
@@ -223,7 +222,7 @@
                 <!-- Stage 4 -->
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <i data-lucide="activity"></i>
+                        <i data-lucide="target"></i>
                     </div>
                     <div class="timeline-content">
                         <span class="timeline-stage-label">Etap 04</span>
