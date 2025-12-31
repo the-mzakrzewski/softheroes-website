@@ -620,22 +620,34 @@
 
             <!-- Right: Form (Light) -->
             <div class="contact-form-wrapper">
-                <form class="contact-form">
+                @if(session('success'))
+                    <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
+                        <p class="font-bold">Wiadomość wysłana</p>
+                        <p>{{ session('success') }}</p>
+                    </div>
+                @endif
+
+                <form class="contact-form" action="{{ route('contact.store') }}" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="name" class="form-label">Imię i nazwisko</label>
-                        <input type="text" id="name" class="form-input" placeholder="Jan Kowalski">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Jan Kowalski" value="{{ old('name') }}" required>
+                        @error('name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email firmowy</label>
-                        <input type="email" id="email" class="form-input" placeholder="jan@firma.pl">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="jan@firma.pl" value="{{ old('email') }}" required>
+                        @error('email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                     </div>
                     <div class="form-group">
                         <label for="stack" class="form-label">Technologia i skala</label>
-                        <input type="text" id="stack" class="form-input" placeholder="np. PHP 8.2 / Laravel, ok. 10k RPM">
+                        <input type="text" id="stack" name="stack" class="form-input" placeholder="np. PHP 8.2 / Laravel, ok. 10k RPM" value="{{ old('stack') }}">
+                        @error('stack') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">W czym mogę pomóc?</label>
-                        <textarea id="message" class="form-textarea" placeholder="Opisz krótko problem z wydajnością..."></textarea>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Opisz krótko problem z wydajnością..." required>{{ old('message') }}</textarea>
+                        @error('message') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                     </div>
                     <button type="submit" class="form-submit">Poproś o wstępną diagnozę</button>
                 </form>
