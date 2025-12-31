@@ -330,7 +330,35 @@ body {
     }
 
     .case-metrics-container {
-        @apply flex items-center gap-6;
+        @apply flex items-stretch gap-0 mt-6 rounded-lg overflow-hidden border border-neutral-200;
+    }
+
+    .case-metric-box {
+        @apply flex-1 p-4 flex flex-col justify-center items-center text-center;
+    }
+
+    .case-metric-box.before {
+        @apply bg-neutral-100 border-r border-neutral-200;
+    }
+
+    .case-metric-box.after {
+        @apply bg-blue-50;
+    }
+
+    .case-metric-label {
+        @apply text-[10px] uppercase tracking-widest text-neutral-500 font-bold mb-1;
+    }
+
+    .case-metric-value {
+        @apply text-2xl md:text-3xl font-black text-neutral-400;
+    }
+
+    .case-metric-box.after .case-metric-value {
+        @apply text-blue-700;
+    }
+    
+    .case-metric-divider {
+        @apply hidden; /* We hide the arrow/divider in this new box layout or style it differently if needed */
     }
 
     /* FAQ Section */
