@@ -593,15 +593,17 @@
                         <i data-lucide="linkedin" class="contact-detail-icon"></i>
                         <div>
                             <span class="contact-detail-label">LinkedIn</span>
-                            <a href="#" class="contact-detail-value">Michał Zakrzewski</a>
+                            <a href="https://www.linkedin.com/in/michal-zakrzewski-a05b9a79/" target="_blank" class="contact-detail-value">Michał Zakrzewski</a>
                         </div>
                     </div>
 
                     <div class="contact-detail-item">
-                        <i data-lucide="activity" class="contact-detail-icon text-green-500"></i>
+                        <div class="contact-detail-icon flex items-center justify-center">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_0_4px_rgba(34,197,94,0.15)]"></span>
+                        </div>
                         <div>
                             <span class="contact-detail-label">Status dostępności</span>
-                            <span class="contact-detail-value text-green-400">Otwarty na nowe projekty</span>
+                            <span class="contact-detail-value cursor-default hover:!text-neutral-900">Otwarty na nowe projekty</span>
                         </div>
                     </div>
                 </div>
@@ -648,8 +650,10 @@
             </p>
             
             <div class="footer-status">
-                <span class="footer-status-dot"></span>
-                <span>Dostępność: Otwarty na Q1 2025</span>
+                <span class="status-badge is-available !text-neutral-400 !text-xs !font-mono">
+                    <span class="status-badge-dot"></span>
+                    Dostępność: Otwarty na Q1 2025
+                </span>
             </div>
         </div>
 
