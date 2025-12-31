@@ -557,6 +557,83 @@
         </div>
     </section>
 
+    <section id="kontakt" class="contact-section">
+        <div class="section-grid">
+            <div class="section-label-col">
+                <span class="section-label">// KONTAKT //</span>
+            </div>
+             <div class="section-content-col">
+                <h2 class="blockers-title">Przestań zgadywać. Znajdźmy przyczynę.</h2>
+                <p class="blockers-description">
+                    Opisz krótko wyzwania techniczne, z którymi się mierzysz. Wstępna analiza problemu jest bezpłatna i nie zobowiązuje do współpracy. Odpowiadam w ciągu 24h.
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Left: Info Card (Dark) -->
+            <div class="contact-info-wrapper">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Bezpieczeństwo i poufność</h3>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-12">
+                        Twoje dane i kod są bezpieczne. Każda analiza poprzedzona jest podpisaniem NDA, jeśli jest to wymagane przez Twoją organizację.
+                    </p>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <i data-lucide="mail" class="contact-detail-icon"></i>
+                        <div>
+                            <span class="contact-detail-label">Email</span>
+                            <a href="mailto:kontakt@softheroes.pl" class="contact-detail-value">kontakt@softheroes.pl</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i data-lucide="linkedin" class="contact-detail-icon"></i>
+                        <div>
+                            <span class="contact-detail-label">LinkedIn</span>
+                            <a href="#" class="contact-detail-value">Michał Zakrzewski</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i data-lucide="activity" class="contact-detail-icon text-green-500"></i>
+                        <div>
+                            <span class="contact-detail-label">Status dostępności</span>
+                            <span class="contact-detail-value text-green-400">Otwarty na nowe projekty</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative element -->
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600 rounded-full opacity-10 blur-3xl pointer-events-none"></div>
+            </div>
+
+            <!-- Right: Form (Light) -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Imię i nazwisko</label>
+                        <input type="text" id="name" class="form-input" placeholder="Jan Kowalski">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email firmowy</label>
+                        <input type="email" id="email" class="form-input" placeholder="jan@firma.pl">
+                    </div>
+                    <div class="form-group">
+                        <label for="stack" class="form-label">Technologia i skala</label>
+                        <input type="text" id="stack" class="form-input" placeholder="np. PHP 8.2 / Laravel, ok. 10k RPM">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">W czym mogę pomóc?</label>
+                        <textarea id="message" class="form-textarea" placeholder="Opisz krótko problem z wydajnością..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Poproś o wstępną diagnozę</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="bg-gray-50 py-12 px-6 md:px-12 border-t border-gray-200">

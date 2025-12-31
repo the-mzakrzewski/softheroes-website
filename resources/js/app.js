@@ -14,7 +14,9 @@ import {
     HandCoins,
     Layers,
     Layout,
+    Linkedin,
     Lock,
+    Mail,
     Menu,
     PieChart,
     Search,
@@ -44,6 +46,8 @@ createIcons({
         Lock,
         Calendar,
         Layout,
-        HandCoins
+        HandCoins,
+        Mail,
+        Linkedin
     },
 });
