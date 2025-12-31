@@ -593,7 +593,7 @@
                         <i data-lucide="linkedin" class="contact-detail-icon"></i>
                         <div>
                             <span class="contact-detail-label">LinkedIn</span>
-                            <a href="https://www.linkedin.com/in/michal-zakrzewski-a05b9a79/" target="_blank" class="contact-detail-value">Michał Zakrzewski</a>
+                            <a href="www.linkedin.com/in/michal-zakrzewski-a05b9a79" target="_blank" class="contact-detail-value">Michał Zakrzewski</a>
                         </div>
                     </div>
 
