@@ -681,5 +681,11 @@
         <div>&copy; {{ date('Y') }} softheroes. All rights reserved.</div>
     </div>
 </footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Wróć na górę">
+    <i data-lucide="arrow-up" class="w-6 h-6"></i>
+</button>
+
 </body>
 </html>
