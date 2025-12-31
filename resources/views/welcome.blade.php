@@ -636,16 +636,49 @@
     </section>
 </main>
 
-<footer class="bg-gray-50 py-12 px-6 md:px-12 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-6">
-        <div class="text-center md:text-left">
-            <div class="text-xl font-bold mb-2">SoftHeroes</div>
-            <p class="text-gray-500 text-sm">© {{ date('Y') }} SoftHeroes Inc. Wszelkie prawa zastrzeżone.</p>
+<footer class="footer-section">
+    <div class="footer-grid">
+        <!-- Col 1: Brand & Status -->
+        <div class="footer-col">
+            <div class="footer-brand">soft<span>heroes</span></div>
+            <p class="footer-tagline">
+                Specjalistyczna optymalizacja wydajności systemów High-Load.
+                <br /><br />
+                PHP • Python • Node.js
+            </p>
+            
+            <div class="footer-status">
+                <span class="footer-status-dot"></span>
+                <span>Dostępność: Otwarty na Q1 2025</span>
+            </div>
         </div>
-        <div class="flex gap-6 text-sm text-gray-500">
-            <a href="#" class="hover:text-black">Prywatność</a>
-            <a href="#" class="hover:text-black">Regulamin</a>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+            <span class="footer-label">// NAWIGACJA //</span>
+            <nav class="footer-nav">
+                <a href="#uslugi" class="footer-link">Audyt & Proces</a>
+                <a href="#case-studies" class="footer-link">Case Studies</a>
+                <a href="#kontakt" class="footer-link">Kontakt / Wycena</a>
+                <a href="#" class="footer-link text-neutral-500 hover:text-neutral-400">Polityka Prywatności</a>
+            </nav>
         </div>
+
+        <!-- Col 3: Legal -->
+        <div class="footer-col">
+            <span class="footer-label">// DANE FIRMY //</span>
+            <div class="footer-legal-text">
+                <p class="font-bold text-neutral-300 mb-1">Soft Heroes Michał Zakrzewski</p>
+                <p>NIP: 732-210-27-67</p>
+                <p>ul. Milenijna 29/33</p>
+                <p>95-100 Zgierz</p>
+                <p class="mt-4">Polska / Remote</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>&copy; {{ date('Y') }} softheroes. All rights reserved.</div>
     </div>
 </footer>
 </body>
