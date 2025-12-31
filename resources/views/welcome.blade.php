@@ -287,6 +287,131 @@
         </div>
     </section>
 
+    <section class="cases-section">
+        <div class="section-grid">
+            <!-- Section Label -->
+            <div class="section-label-col">
+                <span class="section-label">// CASE STUDY //</span>
+            </div>
+
+            <!-- Content -->
+            <div class="section-content-col">
+                <h2 class="blockers-title">
+                    Optymalizacja backendu to nie tylko czystszy kod – to mierzalny wpływ na stabilność biznesu i realne oszczędności w infrastrukturze.
+                </h2>
+                <p class="blockers-description">
+                    Poniżej znajdziesz wybrane realizacje, w których mierzyłem się z krytycznymi problemami wydajnościowymi. Każdy z tych przypadków wymagał innego podejścia: od głębokiej refaktoryzacji zapytań SQL, przez zmianę architektury potoków danych, aż po wdrożenie zaawansowanych mechanizmów cachowania.
+                    <br /> <br />
+                    Nie publikuję tu setek linii kodu, ale konkretne metryki, które pokazują stan systemu przed i po mojej interwencji. Moim celem w każdym projekcie jest znalezienie tzw. „dźwigni” – tych 20% zmian w architekturze, które dają 80% poprawy szybkości działania systemu.
+                </p>
+
+                <div class="cases-grid">
+                    <!-- Case 1 -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-tag">E-Commerce High-Load</span>
+                            <h3 class="case-title">Ratunek silnika E-commerce pod szczytowym obciążeniem</h3>
+                        </div>
+                        
+                        <div class="case-content">
+                            <span class="case-lead">Platforma stawała się bezużyteczna w godzinach szczytu, generując czasy odpowiedzi powyżej 120 sekund i masowe porzucenia koszyków.</span>
+                            
+                            <p class="case-desc">
+                                Gdy baza danych przestała radzić sobie z sesjami tysięcy użytkowników jednocześnie, firma zaczęła notować realne straty finansowe. Problem leżał w nieefektywnej architekturze zapytań i braku odpowiedniej warstwy cachowania.
+                            </p>
+
+                            <ul class="case-list">
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>Wdrożenie warstwy Redis</strong> – Oddelegowanie powtarzalnych odczytów i sesji do pamięci RAM, odciążając główną bazę danych o 70%.</span>
+                                </li>
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>Refaktoryzacja zapytań</strong> – Eliminacja kosztownych joinów na ogromnych zbiorach danych.</span>
+                                </li>
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>Precyzyjne indeksowanie</strong> – Analiza planów wykonania zapytań i wdrożenie indeksów celujących w procesy.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="case-footer">
+                            <div class="case-metrics-container">
+                                <div class="case-metric-box">
+                                    <span class="case-metric-label">Przed</span>
+                                    <span class="case-metric-value">120s+</span>
+                                </div>
+                                <div class="case-arrow">
+                                    <i data-lucide="arrow-right" class="w-8 h-8"></i>
+                                </div>
+                                <div class="case-metric-box">
+                                    <span class="case-metric-label">Po</span>
+                                    <span class="case-metric-value highlight">&lt;200ms</span>
+                                </div>
+                            </div>
+
+                            <div class="case-result-badge">
+                                <p class="case-result-text">WYNIK: Redukcja czasu ładowania o 99%.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-tag">Data Ingestion</span>
+                            <h3 class="case-title">Optymalizacja potoków danych o wolumenie 20GB dziennie</h3>
+                        </div>
+                        
+                        <div class="case-content">
+                            <span class="case-lead">Krytyczny proces przetwarzania danych trwał 24 godziny, zmuszając firmę do pracy na nieaktualnych informacjach.</span>
+                            
+                            <p class="case-desc">
+                                Wąskie gardło w potoku danych (data pipeline) uniemożliwiało podejmowanie decyzji w czasie rzeczywistym. System nie nadążał z parsowaniem surowych plików. Tradycyjne podejście plikowe osiągnęło swój kres wydajnościowy.
+                            </p>
+
+                            <ul class="case-list">
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>MongoDB as Staging</strong> – Wdrożenie warstwy stagingowej do błyskawicznego parsowania i wstępnej obróbki surowych danych.</span>
+                                </li>
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>Streamowanie danych</strong> – Zastąpienie powolnych procesów odczytu plików zoptymalizowanym przesyłem strumieniowym.</span>
+                                </li>
+                                <li class="case-list-item">
+                                    <i data-lucide="check" class="case-list-icon"></i> 
+                                    <span><strong>Równoleglizacja i Bulk-Ops</strong> – Rozbicie monoprocesu na dziesiątki równoległych wątków wykorzystujących operacje zbiorcze.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="case-footer">
+                            <div class="case-metrics-container">
+                                <div class="case-metric-box">
+                                    <span class="case-metric-label">Przed</span>
+                                    <span class="case-metric-value">24h</span>
+                                </div>
+                                <div class="case-arrow">
+                                    <i data-lucide="arrow-right" class="w-8 h-8"></i>
+                                </div>
+                                <div class="case-metric-box">
+                                    <span class="case-metric-label">Po</span>
+                                    <span class="case-metric-value highlight">5min</span>
+                                </div>
+                            </div>
+
+                            <div class="case-result-badge">
+                                <p class="case-result-text">WYNIK: 288-krotny wzrost wydajności.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about-section">
         <div class="section-grid">
             <!-- Section Label -->
