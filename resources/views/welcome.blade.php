@@ -479,6 +479,89 @@
         </div>
     </section>
 
+    <section class="faq-section">
+        <div class="section-grid">
+            <!-- Section Label -->
+            <div class="section-label-col">
+                <span class="section-label">// MASZ PYTANIA? //</span>
+            </div>
+
+            <!-- Content -->
+            <div class="section-content-col">
+                <h2 class="blockers-title">
+                    Znajdź odpowiedzi dotyczące optymalizacji Twojego systemu.
+                </h2>
+            </div>
+        </div>
+
+        <div class="faq-grid">
+            <!-- Q1 -->
+            <div class="faq-item">
+                <div class="faq-question-col">
+                    <i data-lucide="cpu" class="faq-icon"></i>
+                    <h3 class="faq-question">W jakich technologiach się specjalizuje?</h3>
+                </div>
+                <div class="faq-answer-col">
+                    <p class="faq-answer">
+                        Skupiam się wyłącznie na tym, co znam najlepiej: PHP (Laravel, Symfony), JavaScript/TypeScript (Node.js) oraz Python (Django, FastAPI). Optymalizuję bazy danych PostgreSQL, MySQL i MongoDB oraz architekturę opartą o Redis i RabbitMQ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-item">
+                <div class="faq-question-col">
+                    <i data-lucide="shield-check" class="faq-icon"></i>
+                    <h3 class="faq-question">Czy audyt wymaga przerwy w działaniu systemu?</h3>
+                </div>
+                <div class="faq-answer-col">
+                    <p class="faq-answer">
+                        Nie. Proces audytu jest całkowicie bezinwazyjny. Pracuję asynchronicznie, analizując logi, telemetrię i kod źródłowy. Nie wprowadzam zmian na produkcji bez wcześniejszych testów i Twojej akceptacji.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-item">
+                <div class="faq-question-col">
+                    <i data-lucide="lock" class="faq-icon"></i>
+                    <h3 class="faq-question">Czy możemy podpisać umowę NDA?</h3>
+                </div>
+                <div class="faq-answer-col">
+                    <p class="faq-answer">
+                        Tak. Bezpieczeństwo Twojego kodu i danych biznesowych jest priorytetem. Przed uzyskaniem dostępów podpisujemy standardową umowę o zachowaniu poufności (NDA).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="faq-item">
+                <div class="faq-question-col">
+                    <i data-lucide="calendar" class="faq-icon"></i>
+                    <h3 class="faq-question">Ile trzeba czekać na rozpoczęcie prac?</h3>
+                </div>
+                <div class="faq-answer-col">
+                    <p class="faq-answer">
+                        Jako ekspert pracujący z ograniczoną liczbą klientów, zazwyczaj planuję audyty z 2-tygodniowym wyprzedzeniem. Pozwala mi to na pełne skupienie się na jednym systemie w danym sprincie diagnostycznym.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="faq-item">
+                <div class="faq-question-col">
+                    <i data-lucide="layout" class="faq-icon"></i>
+                    <h3 class="faq-question">Czy zajmujesz się również frontendem lub CMS-ami?</h3>
+                </div>
+                <div class="faq-answer-col">
+                    <p class="faq-answer">
+                        Nie. Nie zajmuję się WordPressami, poprawianiem wizualnych błędów w CSS czy budową stron wizytówek. Moja domena to wyłącznie wydajność backendu, bazy danych i architektura systemowa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer class="bg-gray-50 py-12 px-6 md:px-12 border-t border-gray-200">
