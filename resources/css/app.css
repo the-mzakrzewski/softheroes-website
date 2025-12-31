@@ -19,10 +19,11 @@
 }
 
 body {
-    @apply text-neutral-800;
+    @apply text-neutral-800 text-base;
 }
 
 @layer components {
+    /* --- HERO SECTION --- */
     .hero-section {
         @apply min-h-[calc(100vh-6rem)] flex flex-col justify-center max-w-7xl mx-auto px-6 md:px-0 py-20;
     }
@@ -32,7 +33,7 @@ body {
     }
 
     .hero-title {
-        @apply text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[1.2] tracking-tight mb-12 w-full;
+        @apply text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-10 w-full;
     }
 
     .hero-highlight {
@@ -44,11 +45,11 @@ body {
     }
 
     .hero-subtitle {
-        @apply text-xl md:text-2xl text-neutral-600 mb-10 leading-relaxed max-w-2xl;
+        @apply text-lg md:text-xl text-neutral-600 mb-10 leading-relaxed max-w-2xl;
     }
 
     .hero-cta {
-        @apply bg-neutral-800 text-white px-10 py-5 text-lg font-bold rounded-sm hover:bg-neutral-800 transition-all inline-flex items-center gap-3 shadow-sm hover:shadow-md active:scale-95;
+        @apply bg-neutral-800 text-white px-10 py-4 text-base font-bold rounded-sm hover:bg-neutral-800 transition-all inline-flex items-center gap-3 shadow-sm hover:shadow-md active:scale-95;
     }
 
     .hero-trust-indicators {
@@ -63,6 +64,7 @@ body {
         @apply w-5 h-5 text-neutral-400;
     }
 
+    /* --- HEADER & NAV --- */
     .header {
         @apply w-full py-6 px-6 md:px-12 border-b border-neutral-100 bg-white/90 backdrop-blur fixed top-0 left-0 right-0 z-50;
     }
@@ -73,10 +75,10 @@ body {
 
     .logo {
         @apply text-2xl font-bold tracking-tight;
-
-        span {
-            @apply font-normal;
-        }
+    }
+    
+    .logo span {
+        @apply font-normal;
     }
 
     .nav-menu {
@@ -91,10 +93,6 @@ body {
         @apply hover:text-neutral-900 transition-colors flex items-center gap-2 whitespace-nowrap;
     }
 
-    .nav-num {
-        @apply font-mono text-xs text-blue-600;
-    }
-
     .nav-cta {
         @apply bg-neutral-900 text-white px-6 py-3 text-sm font-bold rounded-sm hover:bg-neutral-800 transition-all shadow-sm;
     }
@@ -107,9 +105,9 @@ body {
         @apply pt-24;
     }
 
-    /* Common Section Layouts */
+    /* --- SHARED LAYOUTS --- */
     .section-grid {
-        @apply grid grid-cols-1 md:grid-cols-12 gap-12 mb-20;
+        @apply grid grid-cols-1 md:grid-cols-12 gap-12 mb-16;
     }
 
     .section-label-col {
@@ -121,20 +119,23 @@ body {
     }
 
     .section-label {
-        @apply text-sm font-mono text-neutral-400 tracking-widest uppercase block;
+        @apply text-xs font-mono text-neutral-400 tracking-widest uppercase block;
     }
 
-    /* Blokady Wzrostu Section Specifics */
-    .blockers-section {
-        @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-t border-b border-gray-200;
-    }
-
+    /* Titles & Text Hierarchy Shared Classes - GROUPED to avoid @apply error */
+    .section-title,
     .blockers-title {
-        @apply text-3xl md:text-5xl font-bold mb-10 leading-[1.2] tracking-tight -mt-2;
+        @apply text-3xl md:text-4xl font-bold mb-8 leading-[1.2] tracking-tight -mt-2;
     }
 
+    .section-lead,
     .blockers-description {
         @apply text-lg md:text-xl text-neutral-500 max-w-4xl leading-relaxed font-light;
+    }
+
+    /* --- BLOCKERS SECTION --- */
+    .blockers-section {
+        @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-t border-b border-gray-200;
     }
 
     .blockers-boxes-container {
@@ -150,7 +151,7 @@ body {
     }
 
     .blocker-box-title {
-        @apply font-black text-sm uppercase tracking-[0.2em] text-neutral-900 mb-8;
+        @apply font-black text-xs uppercase tracking-[0.2em] text-neutral-900 mb-6;
     }
 
     .blocker-box-text {
@@ -161,7 +162,7 @@ body {
         @apply text-neutral-900 font-medium;
     }
 
-    /* About Section Specifics */
+    /* --- ABOUT SECTION --- */
     .about-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-b border-gray-200;
     }
@@ -190,7 +191,7 @@ body {
         @apply text-neutral-600 leading-relaxed font-light text-base max-w-2xl;
     }
 
-    /* Audit Section Specifics */
+    /* --- AUDIT SECTION --- */
     .audit-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-b border-gray-200;
     }
@@ -200,7 +201,7 @@ body {
     }
 
     .audit-timeline {
-        @apply relative space-y-24 border-l-2 border-dashed border-neutral-200 ml-6 md:ml-10 lg:col-span-7;
+        @apply relative space-y-20 border-l-2 border-dashed border-neutral-200 ml-6 md:ml-10 lg:col-span-7;
     }
 
     .timeline-item {
@@ -216,18 +217,18 @@ body {
     }
 
     .timeline-stage-label {
-        @apply text-[11px] font-bold uppercase tracking-[0.3em] text-neutral-400 mb-2 block;
+        @apply text-xs font-bold uppercase tracking-[0.3em] text-neutral-400 mb-2 block;
     }
 
     .timeline-title {
-        @apply text-2xl md:text-3xl font-black text-neutral-900 mb-4 tracking-tight;
+        @apply text-xl md:text-2xl font-black text-neutral-900 mb-3 tracking-tight;
     }
 
     .timeline-desc {
-        @apply text-lg text-neutral-500 leading-relaxed font-light max-w-2xl;
+        @apply text-base text-neutral-500 leading-relaxed font-light max-w-2xl;
     }
 
-    /* Pricing Card Sidebar Style */
+    /* Pricing Card */
     .audit-pricing-wrapper {
         @apply lg:col-span-5 flex flex-col justify-center;
     }
@@ -236,24 +237,32 @@ body {
         @apply bg-neutral-900 border border-neutral-800 p-8 md:p-12 rounded-xl w-full max-w-md mx-auto shadow-2xl;
     }
 
-    .audit-pricing-content {
-        @apply flex flex-col;
-    }
-
     .audit-pricing-header {
         @apply mb-8 border-b border-neutral-800 pb-8;
     }
 
     .audit-price-label {
-        @apply text-sm font-bold uppercase tracking-widest text-neutral-400 mb-4;
+        @apply text-xs font-black uppercase tracking-[0.3em] text-blue-500 mb-3 block;
+    }
+    
+    .audit-price-container {
+        @apply flex items-baseline gap-2;
     }
 
     .audit-price {
-        @apply text-5xl font-extrabold text-white mb-2;
+        @apply text-5xl md:text-6xl font-black text-white tracking-tighter;
     }
 
-    .audit-price-sub {
-        @apply text-neutral-500 text-sm;
+    .audit-price-currency {
+        @apply text-xl font-bold text-neutral-500;
+    }
+    
+    .audit-price-note-wrapper {
+        @apply mt-6 pt-6 border-t border-neutral-800;
+    }
+
+    .audit-price-note {
+        @apply text-xs text-neutral-400 leading-relaxed uppercase tracking-widest;
     }
 
     .audit-features-list {
@@ -273,10 +282,10 @@ body {
     }
 
     .audit-cta {
-        @apply w-full block text-center bg-white text-neutral-900 px-8 py-4 font-bold hover:bg-neutral-100 transition-colors shadow-lg rounded-lg;
+        @apply w-full block text-center bg-white text-neutral-900 px-8 py-4 font-bold hover:bg-neutral-100 transition-colors shadow-lg rounded-lg text-sm;
     }
 
-    /* Case Studies Section */
+    /* --- CASES SECTION --- */
     .cases-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-b border-gray-200;
     }
@@ -302,11 +311,11 @@ body {
     }
 
     .case-tag {
-        @apply text-[10px] font-bold uppercase tracking-[0.2em] text-blue-700 mb-3 block;
+        @apply text-xs font-bold uppercase tracking-[0.2em] text-blue-700 mb-3 block;
     }
 
     .case-title {
-        @apply text-2xl font-bold text-neutral-900 mb-6 leading-tight h-auto md:h-16;
+        @apply text-xl md:text-2xl font-bold text-neutral-900 mb-6 leading-tight min-h-[4rem];
     }
 
     .case-lead {
@@ -314,7 +323,7 @@ body {
     }
 
     .case-desc {
-        @apply text-neutral-500 font-light leading-relaxed text-sm mb-8;
+        @apply text-neutral-500 font-light leading-relaxed text-base mb-8;
     }
 
     .case-list {
@@ -322,7 +331,7 @@ body {
     }
 
     .case-list-item {
-        @apply flex items-start gap-3 text-xs text-neutral-600 leading-relaxed;
+        @apply flex items-start gap-3 text-sm text-neutral-600 leading-relaxed;
     }
 
     .case-list-icon {
@@ -334,7 +343,7 @@ body {
     }
 
     .case-result-text {
-        @apply text-[11px] uppercase font-black tracking-[0.1em] text-blue-700;
+        @apply text-xs uppercase font-black tracking-[0.1em] text-blue-700;
     }
 
     .case-metrics-container {
@@ -354,7 +363,7 @@ body {
     }
 
     .case-metric-label {
-        @apply text-[10px] uppercase tracking-widest text-neutral-500 font-bold mb-1;
+        @apply text-xs uppercase tracking-widest text-neutral-500 font-bold mb-1;
     }
 
     .case-metric-value {
@@ -364,12 +373,8 @@ body {
     .case-metric-box.after .case-metric-value {
         @apply text-blue-700;
     }
-    
-    .case-metric-divider {
-        @apply hidden; /* We hide the arrow/divider in this new box layout or style it differently if needed */
-    }
 
-    /* FAQ Section */
+    /* --- FAQ SECTION --- */
     .faq-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto border-b border-gray-200;
     }
@@ -395,7 +400,7 @@ body {
     }
 
     .faq-question {
-        @apply text-lg md:text-xl font-bold text-neutral-900 leading-tight;
+        @apply text-xl font-bold text-neutral-900 leading-tight;
     }
 
     .faq-answer-col {
@@ -403,10 +408,10 @@ body {
     }
 
     .faq-answer {
-        @apply text-neutral-500 font-light leading-relaxed text-sm md:text-base;
+        @apply text-neutral-500 font-light leading-relaxed text-base;
     }
 
-    /* Contact Section */
+    /* --- CONTACT SECTION --- */
     .contact-section {
         @apply px-6 md:px-0 py-24 max-w-7xl mx-auto;
     }
@@ -428,7 +433,7 @@ body {
     }
 
     .contact-info-desc {
-        @apply text-neutral-400 font-light leading-relaxed mb-12;
+        @apply text-neutral-400 font-light leading-relaxed mb-12 text-base;
     }
 
     .contact-details {
@@ -444,14 +449,13 @@ body {
     }
 
     .contact-detail-label {
-        @apply text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-1 block;
+        @apply text-xs font-bold uppercase tracking-widest text-neutral-500 mb-1 block;
     }
 
     .contact-detail-value {
-        @apply text-lg font-medium text-white hover:text-blue-400 transition-colors block;
+        @apply text-base md:text-lg font-medium text-white hover:text-blue-400 transition-colors block;
     }
 
-    /* Form Styles Refined */
     .contact-form {
         @apply space-y-6;
     }
@@ -465,18 +469,18 @@ body {
     }
 
     .form-input {
-        @apply w-full bg-neutral-50 border-b-2 border-neutral-200 px-4 py-4 text-neutral-900 focus:outline-none focus:border-blue-600 focus:bg-white transition-all text-lg font-light placeholder-neutral-400;
+        @apply w-full bg-neutral-50 border-b-2 border-neutral-200 px-4 py-4 text-neutral-900 focus:outline-none focus:border-blue-600 focus:bg-white transition-all text-base font-light placeholder-neutral-400;
     }
 
     .form-textarea {
-        @apply w-full bg-neutral-50 border-b-2 border-neutral-200 px-4 py-4 text-neutral-900 h-40 resize-none focus:outline-none focus:border-blue-600 focus:bg-white transition-all text-lg font-light placeholder-neutral-400;
+        @apply w-full bg-neutral-50 border-b-2 border-neutral-200 px-4 py-4 text-neutral-900 h-40 resize-none focus:outline-none focus:border-blue-600 focus:bg-white transition-all text-base font-light placeholder-neutral-400;
     }
 
     .form-submit {
-        @apply inline-block bg-blue-700 text-white font-bold py-4 px-10 rounded-sm hover:bg-blue-800 transition-colors mt-4;
+        @apply inline-block bg-blue-700 text-white font-bold py-4 px-10 rounded-sm hover:bg-blue-800 transition-colors mt-4 text-base;
     }
 
-    /* Footer Section */
+    /* --- FOOTER --- */
     .footer-section {
         @apply bg-neutral-900 text-white pt-24 pb-12 px-6 md:px-0 border-t border-neutral-800;
     }
@@ -502,7 +506,7 @@ body {
     }
 
     .footer-label {
-        @apply text-[10px] font-mono text-neutral-500 uppercase tracking-widest mb-6 block;
+        @apply text-xs font-mono text-neutral-500 uppercase tracking-widest mb-6 block;
     }
 
     .footer-nav {
@@ -531,7 +535,7 @@ body {
 
     /* Back to Top Button */
     .back-to-top {
-        @apply fixed bottom-8 right-8 bg-neutral-700 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 z-40 hover:bg-neutral-600 hover:-translate-y-1 cursor-pointer;
+        @apply fixed bottom-8 right-8 bg-neutral-800 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 z-40 hover:bg-neutral-700 hover:-translate-y-1 cursor-pointer;
     }
 
     .back-to-top.visible {

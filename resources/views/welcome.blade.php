@@ -237,13 +237,13 @@
                     <div class="audit-pricing-content">
                         <div class="audit-pricing-header">
                             <div class="flex flex-col gap-1">
-                                <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em] mb-3">Inwestycja już od</span>
-                                <div class="flex items-baseline gap-2">
-                                    <span class="text-5xl md:text-6xl font-black text-white tracking-tighter">4999</span>
-                                    <span class="text-xl font-bold text-neutral-500">PLN</span>
+                                <span class="audit-price-label">Inwestycja już od</span>
+                                <div class="audit-price-container">
+                                    <span class="audit-price">4999</span>
+                                    <span class="audit-price-currency">PLN</span>
                                 </div>
-                                <div class="mt-6 pt-6 border-t border-neutral-800">
-                                    <p class="text-[11px] text-neutral-400 leading-relaxed uppercase tracking-widest">
+                                <div class="audit-price-note-wrapper">
+                                    <p class="audit-price-note">
                                         Cena netto. Ostateczna wycena zależy od <br> wielkości i złożoności Twojego
                                         systemu.
                                     </p>
@@ -574,8 +574,8 @@
             <!-- Left: Info Card (Dark) -->
             <div class="contact-info-wrapper">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Bezpieczeństwo i poufność</h3>
-                    <p class="text-neutral-400 font-light leading-relaxed mb-12">
+                    <h3 class="contact-info-title">Bezpieczeństwo i poufność</h3>
+                    <p class="contact-info-desc">
                         Twoje dane i kod są bezpieczne. Każda analiza poprzedzona jest podpisaniem NDA, jeśli jest to wymagane przez Twoją organizację.
                     </p>
                 </div>
