@@ -609,14 +609,9 @@
                     Opisz krótko wyzwania techniczne, z którymi się mierzysz. Wstępna analiza problemu jest bezpłatna i nie zobowiązuje do współpracy. Odpowiadam w ciągu 24h.
                 </p>
 
-                @if(session('success'))
-                    <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
-                        <p class="font-bold">Wiadomość wysłana</p>
-                        <p>{{ session('success') }}</p>
-                    </div>
-                @endif
+                <div id="js-form-status" class="hidden mb-6 p-4 rounded-md"></div>
 
-                <form class="contact-form" action="{{ route('contact.store') }}" method="POST">
+                <form id="contact-form" class="contact-form" action="{{ route('contact.store') }}" method="POST">
                     @csrf
                     <div class="form-group">
                         <label for="name" class="form-label">Imię i nazwisko</label>
