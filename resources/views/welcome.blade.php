@@ -560,7 +560,7 @@
                 </div>
                 <div class="faq-answer-col">
                     <p class="faq-answer">
-                        Nie. Nie zajmuję się WordPressami, poprawianiem wizualnych błędów w CSS czy budową stron wizytówek. Moja domena to wyłącznie wydajność backendu, bazy danych i architektura systemowa.
+                        Nie zajmuję się aplikacjami używających WordPress lub Joomla, poprawianiem wizualnych błędów w CSS czy budową stron wizytówek. Moja domena to wyłącznie wydajność backendu, bazy danych i architektura systemowa.
                     </p>
                 </div>
             </div>
