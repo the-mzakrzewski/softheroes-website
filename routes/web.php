@@ -1,9 +1,12 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormSubmission;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,16 +20,23 @@ Route::post('/contact', function (Request $request) {
         'message' => 'required|string',
     ]);
 
-    $data = "Date: " . now() . "\n" .
+    // Save to file (Backup)
+    $dataString = "Date: " . now() . "\n" .
             "Name: " . $validated['name'] . "\n" .
             "Email: " . $validated['email'] . "\n" .
             "Stack: " . ($validated['stack'] ?? 'N/A') . "\n" .
-            "Message: \n" . $validated['message'] . "\n" .
-            "--------------------------------------------------\n";
+            "Message: \n" . $validated['message'] . "\n";
 
     $filename = 'contact_submissions/' . now()->format('Y-m-d_H-i-s') . '_' . str()->slug($validated['name']) . '.txt';
-    
-    Storage::disk('local')->put($filename, $data);
+    Storage::disk('local')->put($filename, $dataString);
+
+    // Send Email
+    try {
+        Mail::to(config('mail.from.address'))->send(new ContactFormSubmission($validated));
+    } catch (\Exception $e) {
+        Log::error('Mail sending failed: ' . $e->getMessage());
+        return response()->json(['message' => 'Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie za chwilę.'], 500);
+    }
 
     return response()->json(['message' => 'Dziękuję za wiadomość! Odpowiem w ciągu 24h.']);
 })->name('contact.store');
