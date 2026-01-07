@@ -13,6 +13,11 @@ Route::get('/', function () {
 });
 
 Route::post('/contact', function (Request $request) {
+    // Honeypot check
+    if ($request->filled('phone_number')) {
+        return response()->json(['message' => 'Dziękuję za wiadomość! Odpowiem w ciągu 24h.']);
+    }
+
     $validated = $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',

@@ -613,6 +613,12 @@
 
                 <form id="contact-form" class="contact-form" action="{{ route('contact.store') }}" method="POST">
                     @csrf
+                    <!-- Honeypot for bots -->
+                    <div class="hidden">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <div class="form-group">
                         <label for="name" class="form-label">Imię i nazwisko</label>
                         <input type="text" id="name" name="name" class="form-input" placeholder="Jan Kowalski" value="{{ old('name') }}" required>
